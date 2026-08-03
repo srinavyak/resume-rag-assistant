@@ -1,0 +1,89 @@
+PROJECT NOTES — SRI NAVYA KUNDULA
+
+=== Netflix GPT (Personal Project) ===
+Live demo: https://movieplex-72886.web.app/
+Stack: React, Redux, Firebase, TMDB API, Google Gemini API
+Timeframe: Built during career break, 2023–Present
+
+Netflix GPT is a full-stack, Netflix-style movie discovery web application. Users can
+search for movies using natural language (e.g., "something light and funny in Spanish")
+instead of exact titles or keywords. The app integrates the Google Gemini API to interpret
+the user's intent and generate personalized, multi-language movie recommendations, which
+are then matched against real movie data pulled from the TMDB API.
+
+Key implementation details:
+- Built reusable React components (Movie List, Movie Card, Main/Secondary Containers) and
+  custom hooks to fetch and manage movie data from the TMDB API.
+- Designed Redux state-management slices to coordinate user, movie, and AI-suggestion data
+  across the application.
+- Implemented secure authentication using Firebase Auth, including login/signup, form
+  validation, profile updates, and protected routes.
+- Applied prompt/context engineering to the Gemini API calls so recommendations stay
+  relevant to the user's natural-language query and support multiple languages.
+- Optimized performance using memoization and delivered a fully responsive UI.
+- Deployed to production using Firebase Hosting, managing environment configuration and
+  resolving authentication and profile bugs post-launch.
+
+This project is the main evidence of hands-on, production LLM API integration —
+prompt engineering, structured output handling, and owning an app end-to-end from
+build through live deployment.
+
+=== AT&T (via Connx Inc) — Software Developer, Sep 2021 – Mar 2023 ===
+
+Worked on API-driven telecom applications, primarily in Python and Django, with GraphQL
+for integrating multiple backend data sources. Core responsibilities centered on building
+and operating production backend services, not just writing code in isolation.
+
+Key work:
+- Designed and implemented RESTful APIs and CRUD operations backed by PostgreSQL.
+- Refactored legacy systems, cutting deployment time by 50% and improving long-term code
+  maintainability.
+- Integrated multiple systems via GraphQL, improving real-time data retrieval efficiency
+  across services.
+- Ingested data into Elasticsearch and built client-specific Kibana dashboards to track
+  services, integrations, and key APIs for ongoing production monitoring.
+- Triaged and prioritized incoming ServiceNow tickets, helping the Provisioning Team
+  resolve high-priority issues faster and reduce backlog.
+- Partnered with cross-functional teams to troubleshoot production issues, strengthen
+  system reliability, and improve backend performance through query optimization.
+- Worked within Git, Docker, and CI/CD pipelines in an Agile, JIRA-tracked environment.
+
+This role is the strongest evidence of production ownership — building something,
+deploying it, monitoring it, and being the one who fixes it when it breaks.
+
+=== Quadrant Resources — Associate Software Engineer, Nov 2019 – Aug 2021 ===
+
+Built an end-to-end AI automation pipeline in Python for resume parsing and candidate
+job-matching, chaining together NLP models to turn unstructured text into structured,
+usable data.
+
+Key work:
+- Engineered an AI workflow using Python, spaCy, BERT, and Hugging Face Transformers to
+  automate resume parsing, candidate enrichment, and job-matching decisions end-to-end.
+- Built a Named Entity Recognition (NER) model to extract structured data (name, email,
+  phone, organization, experience) from unstructured resume text, designing a multilayer
+  neural network for high-precision entity classification.
+- Trained and evaluated ML models on a corpus of 600+ annotated resumes, applying TF-IDF
+  and Word2Vec embeddings for feature engineering to improve extraction accuracy.
+- Developed Python web-scraping tools (Selenium) to ingest job listings from LinkedIn,
+  Indeed, and other portals, powering the AI pipeline's data layer.
+- Implemented backend APIs enforcing strict validation, filtering, and structured JSON
+  output requirements for AI-generated results.
+- Built dashboards to visualize AI outputs, validation outcomes, and workflow execution
+  metrics, closing the feedback loop with stakeholders.
+- Applied unit testing and CI/CD within JIRA-tracked Agile sprints; collaborated with
+  engineering and business stakeholders to scope and prioritize AI feature work.
+
+This role is the main evidence of NLP/ML depth — embeddings, entity extraction, and
+structured-output validation on AI-generated results, which is the same underlying skill
+set needed for grounding LLM outputs in a RAG system.
+
+=== Career Notes ===
+Relocated to the USA in March 2023 and took family leave. During this period, maintained
+active software engineering skills by building and shipping production-style AI and
+full-stack applications (see Netflix GPT above), rather than stepping away from hands-on
+technical work entirely.
+
+Education: Bachelor of Technology (B.Tech), Shri Vishnu Engineering College for Women,
+India, 2019.
+Work Authorization: H4 EAD.
