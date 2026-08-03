@@ -13,7 +13,13 @@ TOP_K = 4                    # how many chunks to retrieve
 DISTANCE_THRESHOLD = 1.1 # tune this empirically — see note below
 
 chroma_client = chromadb.PersistentClient(path="chroma_db")
-collection = chroma_client.get_collection(name="resume_docs")
+try:
+    collection = chroma_client.get_collection(name="resume_docs")
+except Exception:
+    print("Collection not found — building vector store from documents/...")
+    from embed_and_store import build_vector_store
+    build_vector_store()
+    collection = chroma_client.get_collection(name="resume_docs")
 
 
 def embed_text(text: str) -> list[float]:
